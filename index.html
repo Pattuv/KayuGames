@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KayuGames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Afacad Flux", sans-serif;
+        background-color: pink;
+        height: 100vh; /* Ensure the gradient covers the full height of the viewport */
+        margin: 0;
+        text-align: center;
+      }
+
+      p {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      #title {
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+      }
+
+      #info {
+        font-size: 25px;
+        margin: 0;
+      }
+      .image-container {
+        margin: auto;
+        margin-top: 50px;
+        width: 200px; /* Set the desired width */
+        height: 200px; /* Set the desired height */
+        border-radius: 50px; /* Example of a circular border */
+        overflow: hidden; /* Ensures the image stays within the border */
+        position: relative;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the div without distortion */
+        border-radius: inherit; /* Inherit the border-radius from the parent container */
+      }
+    </style>
+  </head>
+  <body>
+    <p id="title">KayuGames</p>
+    <p id="info">The best browser games, packed into one site.</p>
+
+    <a id="slitherio" href="http://slither.com/io">
+      <div class="image-container">
+        <img
+          src="https://www.androidfreeware.net/img2/air-com-hypah-io-slither.jpg"
+          alt="Sample Image"
+        />
+      </div>
+      <p>Slither.io</p>
+    </a>
+
+    <a id="cookies" href="https://orteil.dashnet.org/cookieclicker/">
+      <div class="image-container">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/I/71VSpLvjtaL.png"
+          alt="Sample Image"
+        />
+      </div>
+      <p>Cookie Clicker</p>
+    </a>
+
+    <a id="agario" href="https://agar.io/#ffa">
+      <div class="image-container">
+        <img
+          src="https://lutear.com/wp-content/uploads/2022/04/agario-logo.jpg"
+          alt="Sample Image"
+        />
+      </div>
+      <p>Agar.io</p>
+    </a>
+
+    <a id="littlealch" href="https://littlealchemy2.com/">
+      <div class="image-container">
+        <img
+          src="https://api.web.gamepix.com/assets/img/250/250/icon/little-alchemy-2.png"
+          alt="Sample Image"
+        />
+      </div>
+      <p>Little Alchemy 2</p>
+    </a>
+
+    <a id="paperio" href="https://paper-io.com/#google_vignette">
+      <div class="image-container">
+        <img
+          src="http://www.webmasters-en-france.com/wp-content/uploads/logo-paper-io.png"
+          alt="Sample Image"
+        />
+      </div>
+      <p>Paper.io</p>
+    </a>
+  </body>
+</html>
