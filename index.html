@@ -3,20 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="KayuGames" />
+    <meta name="application-name" content="KayuGames" />
+    <meta name="theme-color" content="#FFC0CB" />
     <title>KayuGames</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="manifest" href="path-to-your-icon/manifest.json" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Cedarville+Cursive&display=swap"
       rel="stylesheet"
     />
+
     <style>
+      html,
       body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
         font-family: "Afacad Flux", sans-serif;
         background-color: pink;
-        height: 100vh; /* Ensure the gradient covers the full height of the viewport */
-        margin: 0;
+        overflow: hidden; /* Prevent scrolling */
         text-align: center;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       p {
@@ -27,7 +53,6 @@
       #title {
         font-family: "Cedarville Cursive", cursive;
         font-size: 50px;
-        text-align: center;
         margin: 0;
       }
 
@@ -35,21 +60,27 @@
         font-size: 25px;
         margin: 0;
       }
+
       .image-container {
         margin: auto;
-        margin-top: 50px;
-        width: 200px; /* Set the desired width */
-        height: 200px; /* Set the desired height */
-        border-radius: 50px; /* Example of a circular border */
-        overflow: hidden; /* Ensures the image stays within the border */
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+        overflow: hidden;
         position: relative;
       }
 
       .image-container img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ensures the image covers the div without distortion */
-        border-radius: inherit; /* Inherit the border-radius from the parent container */
+        object-fit: cover;
+        border-radius: inherit;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
       }
     </style>
   </head>
@@ -61,7 +92,7 @@
       <div class="image-container">
         <img
           src="https://www.androidfreeware.net/img2/air-com-hypah-io-slither.jpg"
-          alt="Sample Image"
+          alt="Slither.io Image"
         />
       </div>
       <p>Slither.io</p>
@@ -71,7 +102,7 @@
       <div class="image-container">
         <img
           src="https://images-eu.ssl-images-amazon.com/images/I/71VSpLvjtaL.png"
-          alt="Sample Image"
+          alt="Cookie Clicker Image"
         />
       </div>
       <p>Cookie Clicker</p>
@@ -81,7 +112,7 @@
       <div class="image-container">
         <img
           src="https://lutear.com/wp-content/uploads/2022/04/agario-logo.jpg"
-          alt="Sample Image"
+          alt="Agar.io Image"
         />
       </div>
       <p>Agar.io</p>
@@ -91,7 +122,7 @@
       <div class="image-container">
         <img
           src="https://api.web.gamepix.com/assets/img/250/250/icon/little-alchemy-2.png"
-          alt="Sample Image"
+          alt="Little Alchemy 2 Image"
         />
       </div>
       <p>Little Alchemy 2</p>
@@ -101,7 +132,7 @@
       <div class="image-container">
         <img
           src="http://www.webmasters-en-france.com/wp-content/uploads/logo-paper-io.png"
-          alt="Sample Image"
+          alt="Paper.io Image"
         />
       </div>
       <p>Paper.io</p>
